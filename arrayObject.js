@@ -9,7 +9,7 @@ for (let i = 0; i < 10; i++) {
     };
     array.push(person);
 }
-// console.log(array);
+console.log(array);
 
 
 // function findAgeAbove18(arrayRandom) {
@@ -95,10 +95,19 @@ for (let i = 0; i < 10; i++) {
 // }
 // console.log(changeNameMail(array));
 
-function addProperty (arr){
-    for (let i = 0; i < arr.length; i++){
-        arr[i].isActive = true;
+// function addProperty (arr){
+//     for (let i = 0; i < arr.length; i++){
+//         arr[i].isActive = true;
+//     }
+//     console.log ( arr);
+// }
+// console.log (addProperty ( array));
+
+function sumAge ( arrayObject){
+   let  sum = 0;
+    for ( let i = 0; i< arrayObject.length; i++ ){
+        sum = sum + arrayObject[i].age;
     }
-    console.log ( arr);
+    return sum;
 }
-console.log (addProperty ( array));
+console.log( ` sumAge là: `,sumAge(array));

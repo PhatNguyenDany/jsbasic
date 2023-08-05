@@ -103,11 +103,21 @@ console.log(array);
 // }
 // console.log (addProperty ( array));
 
-function sumAge ( arrayObject){
-   let  sum = 0;
-    for ( let i = 0; i< arrayObject.length; i++ ){
-        sum = sum + arrayObject[i].age;
+// function sumAge ( arrayObject){
+//    let  sum = 0;
+//     for ( let i = 0; i< arrayObject.length; i++ ){
+//         sum = sum + arrayObject[i].age;
+//     }
+//     return sum;
+// }
+// console.log( ` sumAge là: `,sumAge(array));
+
+function findEmailTrue ( arr){
+    for( let i = 0; i < arr.length; i++){
+       if(arr[i].email.includes("@")){
+        arr[i].check = true;
+       }
     }
-    return sum;
+    return arr;
 }
-console.log( ` sumAge là: `,sumAge(array));
+console.log ( findEmailTrue(array));

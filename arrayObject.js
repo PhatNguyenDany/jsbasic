@@ -112,12 +112,21 @@ console.log(array);
 // }
 // console.log( ` sumAge là: `,sumAge(array));
 
-function findEmailTrue ( arr){
-    for( let i = 0; i < arr.length; i++){
-       if(arr[i].email.includes("@")){
-        arr[i].check = true;
-       }
+// function findEmailTrue ( arr){
+//     for( let i = 0; i < arr.length; i++){
+//        if(arr[i].email.includes("@")){
+//         arr[i].check = true;
+//        }
+//     }
+//     return arr;
+// }
+// console.log ( findEmailTrue(array));
+
+function changeName ( arr){
+    for ( let i = 0; i < arr.length; i++){
+        const cloneName = {...array};
+        cloneName[i].name = " User"
     }
     return arr;
 }
-console.log ( findEmailTrue(array));
+console.log ( changeName(array));
